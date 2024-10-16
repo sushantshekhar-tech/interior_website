@@ -52,24 +52,24 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="services.html">Services</a></li>
-				          <li><a href="projects.html">Projects</a></li>
+				          <li class="menu-active"><a href="index.php">Home</a></li>
+				          <li><a href="about.php">About</a></li>
+				          <li><a href="services.php">Services</a></li>
+				          <li><a href="projects.php">Projects</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li><a href="blog-home.php">Blog Home</a></li>
+				              <li><a href="blog-single.php">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
-			              		<li><a href="project-details.html">Project Details</a></li>		
-				                <li><a href="elements.html">Elements</a></li>
+			              		<li><a href="project-details.php">Project Details</a></li>		
+				                <li><a href="elements.php">Elements</a></li>
 						          <li class="menu-has-children"><a href="">Level 2 </a>
 						            <ul>
 						              <li><a href="#">Item One</a></li>
@@ -78,7 +78,7 @@
 						          </li>					                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="contact.php">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -92,88 +92,70 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Projects				
-							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects.html"> Projects</a></p>
+								Project Details				
+							</h1>	 
+							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects-details.html"> Project Details</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
 
-			<!-- Start gallery Area -->
-			<section class="gallery-area section-gap">
+			<!-- Start project-details Area -->
+			<section class="project-details-area section-gap">
 				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="col-md-12 pb-40 header-text text-center">
-							<h1 class="pb-10">Our Recent Works may impress you</h1>
+					<div class="row align-items-center">
+						<div class="col-lg-6 project-details-left">
+							<img class="img-fluid" src="img/project-details.jpg" alt="">
+						</div>
+						<div class="col-lg-6 project-details-right">
+							<h3 class="pb-20">Lavendar ambient interior</h3>
 							<p>
-								Who are in extremely love with eco friendly system.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+							</p>
+							<div class="details-info d-flex flex-row">
+								<ul class="names">
+									<li>Rating    </li>
+									<li>Client    </li>
+									<li>Website   </li>
+									<li>Completed </li>
+								</ul>
+								<ul class="desc">
+									<li>
+										<div class="star">
+											: <span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star checked"></span>
+											<span class="fa fa-star"></span>								
+										</div>	
+									</li>
+									<li>: Envato</li>
+									<li>: Themeforest.net</li>
+									<li>: 17 Aug 1028</li>
+								</ul>							
+							</div>	
+							<div class="social-links mt-30">
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-behance"></i></a>
+								<a href="#"><i class="fa fa-linkedin"></i></a>
+							</div>														
+						</div>
+						<div class="col-lg-12 project-desc mt-60">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+								<br>
+								<br>
+								Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
 							</p>
 						</div>
-					</div>							
-					<div class="row">
-						<div class="col-lg-8">
-							<div class="single-gallery">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g1.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-								        <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="single-gallery">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g2.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-								        <h3 class="content-title mx-auto">Ambient interior</h3>
-								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>	
-						<div class="col-lg-4">
-							<div class="single-gallery">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g3.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-								        <h3 class="content-title mx-auto">Ambient interior</h3>
-								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-8">
-							<div class="single-gallery">
-								<div class="content">
-								    <a href="#" target="_blank">
-								      <div class="content-overlay"></div>
-								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g4.jpg" alt="">
-								      <div class="content-details fadeIn-bottom">
-								        <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
-								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
-								      </div>
-								    </a>
-								</div>
-							</div>
-						</div>												
 					</div>
 				</div>	
 			</section>
-			<!-- End gallery Area -->
-				
+			<!-- End project-details Area -->
+
 			<!-- Start brands Area -->
 			<section class="brands-area pb-60 pt-60">
 				<div class="container no-padding">
@@ -198,7 +180,7 @@
 					</div>
 				</div>	
 			</section>
-			<!-- End brands Area -->					
+			<!-- End brands Area -->						
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">

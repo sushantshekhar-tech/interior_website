@@ -56,20 +56,20 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="services.html">Services</a></li>
-				          <li><a href="projects.html">Projects</a></li>
+				          <li class="menu-active"><a href="index.php">Home</a></li>
+				          <li><a href="about.php">About</a></li>
+				          <li><a href="services.php">Services</a></li>
+				          <li><a href="projects.php">Projects</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li><a href="blog-home.php">Blog Home</a></li>
+				              <li><a href="blog-single.php">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
-			              		<li><a href="project-details.html">Project Details</a></li>		
-				                <li><a href="elements.html">Elements</a></li>
+			              		<li><a href="project-details.php">Project Details</a></li>		
+				                <li><a href="elements.php">Elements</a></li>
 						          <li class="menu-has-children"><a href="">Level 2 </a>
 						            <ul>
 						              <li><a href="#">Item One</a></li>
@@ -78,7 +78,7 @@
 						          </li>					                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="contact.php">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -94,7 +94,7 @@
 							<h1 class="text-white">
 								Elements		
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
+							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="elements.html"> Elements</a></p>
 						</div>	
 					</div>
 				</div>

@@ -56,20 +56,20 @@
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="services.html">Services</a></li>
-				          <li><a href="projects.html">Projects</a></li>
+				          <li class="menu-active"><a href="index.php">Home</a></li>
+				          <li><a href="about.php">About</a></li>
+				          <li><a href="services.php">Services</a></li>
+				          <li><a href="projects.php">Projects</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li><a href="blog-home.php">Blog Home</a></li>
+				              <li><a href="blog-single.php">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
-			              		<li><a href="project-details.html">Project Details</a></li>		
-				                <li><a href="elements.html">Elements</a></li>
+			              		<li><a href="project-details.php">Project Details</a></li>		
+				                <li><a href="elements.php">Elements</a></li>
 						          <li class="menu-has-children"><a href="">Level 2 </a>
 						            <ul>
 						              <li><a href="#">Item One</a></li>
@@ -78,7 +78,7 @@
 						          </li>					                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="contact.php">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
@@ -92,75 +92,113 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Contact Us				
+								Projects				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
+							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="projects.html"> Projects</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->				  
+			<!-- End banner Area -->	
 
-			<!-- Start contact-page Area -->
-			<section class="contact-page-area section-gap">
+			<!-- Start gallery Area -->
+			<section class="gallery-area section-gap">
 				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="col-md-12 pb-40 header-text text-center">
+							<h1 class="pb-10">Our Recent Works may impress you</h1>
+							<p>
+								Who are in extremely love with eco friendly system.
+							</p>
+						</div>
+					</div>							
 					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-						<div class="col-lg-4 d-flex flex-column address-wrap">
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-home"></span>
-								</div>
-								<div class="contact-details">
-									<h5>Binghamton, New York</h5>
-									<p>
-										4343 Hinkle Deegan Lake Road
-									</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-phone-handset"></span>
-								</div>
-								<div class="contact-details">
-									<h5>00 (958) 9865 562</h5>
-									<p>Mon to Fri 9am to 6 pm</p>
+						<div class="col-lg-8">
+							<div class="single-gallery">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g1.jpg" alt="">
+								      <div class="content-details fadeIn-bottom">
+								        <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
+								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
+								      </div>
+								    </a>
 								</div>
 							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-envelope"></span>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-gallery">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g2.jpg" alt="">
+								      <div class="content-details fadeIn-bottom">
+								        <h3 class="content-title mx-auto">Ambient interior</h3>
+								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
+								      </div>
+								    </a>
 								</div>
-								<div class="contact-details">
-									<h5>support@colorlib.com</h5>
-									<p>Send us your query anytime!</p>
+							</div>
+						</div>	
+						<div class="col-lg-4">
+							<div class="single-gallery">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g3.jpg" alt="">
+								      <div class="content-details fadeIn-bottom">
+								        <h3 class="content-title mx-auto">Ambient interior</h3>
+								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
+								      </div>
+								    </a>
 								</div>
-							</div>														
+							</div>
 						</div>
 						<div class="col-lg-8">
-							<form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
-								<div class="row">	
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-									
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
-
-										<input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
-									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>				
-									</div>
-									<div class="col-lg-12">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary circle" style="float: right;">Send Message</button>											
-									</div>
+							<div class="single-gallery">
+								<div class="content">
+								    <a href="#" target="_blank">
+								      <div class="content-overlay"></div>
+								  		 <img class="content-image img-fluid d-block mx-auto" src="img/g4.jpg" alt="">
+								      <div class="content-details fadeIn-bottom">
+								        <h3 class="content-title mx-auto">Lavendar ambient interior</h3>
+								        <a href="project-details.html" class="primary-btn text-uppercase mt-20">More Details</a>
+								      </div>
+								    </a>
 								</div>
-							</form>	
-						</div>
+							</div>
+						</div>												
 					</div>
 				</div>	
 			</section>
-			<!-- End contact-page Area -->
+			<!-- End gallery Area -->
+				
+			<!-- Start brands Area -->
+			<section class="brands-area pb-60 pt-60">
+				<div class="container no-padding">
+					<div class="brand-wrap">
+						<div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
+							<div class="col single-brand">
+								<a href="#"><img class="mx-auto" src="img/l1.png" alt=""></a>
+							</div>
+							<div class="col single-brand">
+								<a href="#"><img class="mx-auto" src="img/l2.png" alt=""></a>
+							</div>
+							<div class="col single-brand">
+								<a href="#"><img class="mx-auto" src="img/l3.png" alt=""></a>
+							</div>
+							<div class="col single-brand">
+								<a href="#"><img class="mx-auto" src="img/l4.png" alt=""></a>
+							</div>
+							<div class="col single-brand">
+								<a href="#"><img class="mx-auto" src="img/l5.png" alt=""></a>
+							</div>								
+						</div>																			
+					</div>
+				</div>	
+			</section>
+			<!-- End brands Area -->					
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">

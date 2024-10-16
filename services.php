@@ -52,24 +52,24 @@
 			    <div class="container main-menu">
 			    	<div class="row align-items-center justify-content-between d-flex">
 				      <div id="logo">
-				        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+				        <a href="index.php"><img src="img/logo.png" alt="" title="" /></a>
 				      </div>
 				      <nav id="nav-menu-container">
 				        <ul class="nav-menu">
-				          <li class="menu-active"><a href="index.html">Home</a></li>
-				          <li><a href="about.html">About</a></li>
-				          <li><a href="services.html">Services</a></li>
-				          <li><a href="projects.html">Projects</a></li>
+				          <li class="menu-active"><a href="index.php">Home</a></li>
+				          <li><a href="about.php">About</a></li>
+				          <li><a href="services.php">Services</a></li>
+				          <li><a href="projects.php">Projects</a></li>
 				          <li class="menu-has-children"><a href="">Blog</a>
 				            <ul>
-				              <li><a href="blog-home.html">Blog Home</a></li>
-				              <li><a href="blog-single.html">Blog Single</a></li>
+				              <li><a href="blog-home.php">Blog Home</a></li>
+				              <li><a href="blog-single.php">Blog Single</a></li>
 				            </ul>
 				          </li>	
 				          <li class="menu-has-children"><a href="">Pages</a>
 				            <ul>
-			              		<li><a href="project-details.html">Project Details</a></li>		
-				                <li><a href="elements.html">Elements</a></li>
+			              		<li><a href="project-details.php">Project Details</a></li>		
+				                <li><a href="elements.php">Elements</a></li>
 						          <li class="menu-has-children"><a href="">Level 2 </a>
 						            <ul>
 						              <li><a href="#">Item One</a></li>
@@ -78,13 +78,14 @@
 						          </li>					                		
 				            </ul>
 				          </li>					          					          		          
-				          <li><a href="contact.html">Contact</a></li>
+				          <li><a href="contact.php">Contact</a></li>
 				        </ul>
 				      </nav><!-- #nav-menu-container -->		    		
 			    	</div>
 			    </div>
 			  </header><!-- #header -->
-			  
+
+
 			<!-- start banner Area -->
 			<section class="banner-area relative" id="home">	
 				<div class="overlay overlay-bg"></div>
@@ -92,41 +93,55 @@
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								About Us				
+								Services				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="about.html"> About Us</a></p>
+							<p class="text-white link-nav"><a href="index.php">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="services.html"> Services</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
-			<!-- End banner Area -->	
+			<!-- End banner Area -->
 
-			<!-- Start about-video Area -->
-			<section class="about-video-area section-gap">
+			<!-- Start service Area -->
+			<section class="service-area section-gap" id="service">
 				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-lg-6 about-video-left">
-							<h6 class="text-uppercase">Brand new app to blow your mind</h6>
-							<h1>
-								We’ve made a life <br>
-								that will change you 
-							</h1>
+					<div class="row justify-content-center">
+						<div class="col-md-12 pb-50 header-text text-center">
+							<h1 class="mb-10">What we offer to our clients</h1>
 							<p>
-								<span>We are here to listen from you deliver exellence</span>
+								Who are in extremely love with eco friendly system..
 							</p>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
-							</p>
-							<a class="primary-btn mt-30" href="#">Get Started Now</a>
 						</div>
-						<div class="col-lg-6 about-video-right justify-content-center align-items-center d-flex relative">
-							<div class="overlay overlay-bg"></div>
-							<a class="play-btn" href="https://www.youtube.com/watch?v=ARA0AxrnHdM"><img class="img-fluid mx-auto" src="img/play-btn.png" alt=""></a>
-						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-service">
+								<a href="#"><h4>Interior Design</h4></a>
+								<p>
+									Sony laptops are among the most well known laptops on today’s market. Sony is a name that over time has established itself as creating a solid product.
+								</p>
+							</div>
+						</div>	
+						<div class="col-lg-4">
+							<div class="single-service">
+								<a href="#"><h4>Architecture Design</h4></a>
+								<p>
+									Computer users and programmers have become so accustomed to using Windows, even for the changing capabilities and the appearances of the graphical.
+								</p>
+							</div>
+						</div>	
+						<div class="col-lg-4">
+							<div class="single-service">
+								<a href="#"><h4>Concept Design</h4></a>
+								<p>
+									Can you imagine what we will be downloading in another twenty years? I mean who would have ever thought that you could record sound.
+								</p>
+							</div>
+						</div>																													
 					</div>
 				</div>	
 			</section>
-			<!-- End about-video Area -->					
+			<!-- End service Area -->
 
 			<!-- Start feature Area -->
 			<section class="feature-area section-gap">
@@ -210,101 +225,10 @@
 					</div>
 				</div>	
 			</section>
-			<!-- End feature Area -->	
-
-		    <!-- Start testimonial Area -->
-		    <section class="testimonial-area pt-120">
-		        <div class="container">
-		            <div class="row d-flex justify-content-center">
-		                <div class="menu-content pb-70 col-lg-8">
-		                    <div class="title text-center">
-		                        <h1 class="mb-10">Testimonial from our Clients</h1>
-		                        <p>Who are in extremely love with eco friendly system.</p>
-		                    </div>
-		                </div>
-		            </div>
-		            <div class="row">
-		                <div class="active-testimonial-carusel">
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.
-		                            </p>
-		                            <h4 mt-30>Mark Alviro Wiens</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>								
-									</div>			                            
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Hypnosis quit smoking methods maintain caused quite world over the last two decades. There is a lot of argument pertaining to
-		                            </p>
-		                            <h4 mt-30>Lina Harrington</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>								
-									</div>			                            
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware.
-		                            </p>
-		                            <h4 mt-30>Mark Alviro Wiens</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>								
-									</div>			                            
-		                        </div>
-		                    </div>
-		                    <div class="single-testimonial item d-flex flex-row">
-		                        <div class="thumb">
-		                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-		                        </div>
-		                        <div class="desc">
-		                            <p>
-		                                Hypnosis quit smoking methods maintain caused quite world over the last two decades. There is a lot of argument pertaining to
-		                            </p>
-		                            <h4 mt-30>Lina Harrington</h4>
-									<div class="star">
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star checked"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>
-										<span class="fa fa-star"></span>								
-									</div>			                            
-		                        </div>
-		                    </div>		                    
-		                </div>
-		            </div>
-		        </div>
-		    </section>
-		    <!-- End testimonial Area -->	
+			<!-- End feature Area -->
 
 			<!-- Start callto-action Area -->
-			<section class="callto-action-area pt-120">
+			<section class="callto-action-area section-gap">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="callto-action-wrap col-lg-12 relative section-gap">
@@ -323,158 +247,6 @@
 				</div>	
 			</section>
 			<!-- End callto-action Area -->
-								
-			<!-- Start blog Area -->
-			<section class="blog-area section-gap">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-9">
-							<div class="title text-center">
-								<h1 class="mb-10">Ongoing Exhibitions from the scratch</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>							
-					<div class="row">
-						<div class="active-blog-carusel">
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b1.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">Low Cost Advertising</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b2.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b3.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>	
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b1.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">Low Cost Advertising</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b2.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">Creative Outdoor Ads</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>
-							<div class="single-blog-post item">
-								<div class="thumb">
-									<img class="img-fluid" src="img/b3.jpg" alt="">
-								</div>
-								<div class="details">
-									<div class="tags">
-										<ul>
-											<li>
-												<a href="#">Travel</a>
-											</li>
-											<li>
-												<a href="#">Life Style</a>
-											</li>											
-										</ul>
-									</div>
-									<a href="#"><h4 class="title">It's Classified How To Utilize Free</h4></a>
-									<p>
-										Acres of Diamonds… you’ve read the famous story, or at least had it related to you. A farmer.
-									</p>
-									<h6 class="date">31st January,2018</h6>
-								</div>	
-							</div>														
-
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End blog Area -->
 
 			<!-- Start brands Area -->
 			<section class="brands-area pb-60 pt-60">
@@ -500,8 +272,8 @@
 					</div>
 				</div>	
 			</section>
-			<!-- End brands Area -->											
-				
+			<!-- End brands Area -->																	
+
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">
 				<div class="container">

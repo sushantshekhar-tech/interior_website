@@ -49,16 +49,16 @@
         display: inline;
     }
 
-    @media (max-width: 991.98px) { /* Applies for medium screens and below */
+    @media (max-width: 991.98px) { 
         .freya-logo img {
-            max-height: 35px; /* Adjust logo size for smaller screens */
+            max-height: 35px; 
         }
     }
 
-    /* Reduce padding for social media icons */
+   
     .navbar-nav.ms-auto .nav-link {
-        padding-left: 8px; /* Reduced padding */
-        padding-right: 8px; /* Reduced padding */
+        padding-left: 8px; 
+        padding-right: 8px; 
     }
 </style>
 
@@ -117,7 +117,7 @@
    
    $(document).ready(function () {
     $('.navbar-toggler').click(function () {
-        $(this).toggleClass('collapsed'); // Switch between showing bars and times icons
+        $(this).toggleClass('collapsed'); 
     });
 });
 

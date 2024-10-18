@@ -31,13 +31,35 @@
     <style>
         
         /* Hero Section */
-        .hero-section {
+        /* .hero-section {
             height: 100vh;
             background-image: url('img/blog-1.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
-        }
+        } */
+        .hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    object-fit: cover;
+}
+
+.hero-text {
+    z-index: 2;
+    color: #fff;
+}
+
+.carousel-inner, .carousel-item {
+    height: 100%; /* Full height for the carousel and its items */
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    filter: invert(1); /* Ensure control icons are visible on dark images */
+}
 
         
     </style>
@@ -52,17 +74,50 @@
     <!-- End Header/Navigation -->
 
     <!-- Hero Section -->
-    <section class="hero-section d-flex justify-content-center align-items-center">
-        <h1 class="text-white">Welcome to My Website</h1>
-    </section>
+    <section class="hero-section d-flex justify-content-center align-items-center position-relative">
+    <!-- Bootstrap Carousel -->
+    <div id="heroCarousel" class="carousel slide carousel-fade position-absolute w-100 h-100" data-bs-ride="carousel">
+        <div class="carousel-inner h-100">
+            <div class="carousel-item active">
+                <img src="img/blog-1.jpg" class="d-block w-100 h-100" alt="Slide 1" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/blog-2.jpg" class="d-block w-100 h-100" alt="Slide 2" style="object-fit: cover;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/blog-3.jpg" class="d-block w-100 h-100" alt="Slide 3" style="object-fit: cover;">
+            </div>
+        </div>
+        <!-- Optional: Control buttons -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+
+    <!-- Hero Section Text -->
+    <div class="hero-text position-relative text-center z-2">
+    <h1 class="text-white">Welcome to My Website</h1>
+    <img src="img/snmr-interior logo new copy.pdf (1).png" alt="Company Logo" class="hero-logo img-fluid">
+</div>
+
+
+   
+</section>
+
+<!-- End Hero Section -->
 
     <!-- About Start -->
     <div class="container-fluid bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-primary h-100 py-5 px-3">
-                        <i class="flaticon-brickwall display-1 font-weight-normal text-secondary mb-3"></i>
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100 py-5 px-3">
+                        <i class="flaticon-brickwall display-1 font-weight-normal  mb-3"></i>
                         <h4 class="display-3 mb-3">25+</h4>
                         <h1 class="m-0">Years Experience</h1>
                     </div>

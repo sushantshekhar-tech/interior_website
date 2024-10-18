@@ -1,6 +1,4 @@
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 
 <style>
     .navbar {
@@ -111,14 +109,16 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+CpDoj0iSTeYLmpSfKE+AbpSA2XoK" crossorigin="anonymous"></script>
+
 
 <script>
-    // Toggle the icon between "bars" and "times" when the navbar toggler is clicked
-    $(document).ready(function () {
-        $('.navbar-toggler').click(function () {
-            $(this).toggleClass('collapsed');
-            $('#primaryNavbarCollapse').collapse('toggle'); // Ensure the collapse function works
-        });
+   
+   $(document).ready(function () {
+    $('.navbar-toggler').click(function () {
+        $(this).toggleClass('collapsed'); // Switch between showing bars and times icons
     });
+});
+
 </script>

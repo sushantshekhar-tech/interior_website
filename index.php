@@ -33,7 +33,7 @@
 <body>
    <!-- Start Header/Navigation -->
    <?php
-    require '..\Components\nav.php';
+    require 'Components/nav.php';
     ?>
     <!-- End Header/Navigation -->
 

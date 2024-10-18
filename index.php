@@ -4,6 +4,26 @@
 <head>
     <meta charset="utf-8">
     <title>iDESIGN - Interior Design HTML Template</title>
+    <!-- first change -->
+    <!-- stylesheets -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Montserrat:wght@400;600&display=swap">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- /stylesheet -->
+   <!-- end first change -->
+
+
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -27,6 +47,68 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- new style adding -->
+     <style>
+        .background-video-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents overflow of video */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the entire section */
+    z-index: -1; /* Place video behind other content */
+}
+
+.overlay-content {
+    position: relative; /* Position relative to section */
+    z-index: 1; /* Ensure content is on top of video */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    justify-content: center; /* Center content vertically */
+    height: 100%; /* Full height */
+}
+
+.scroll-down {
+    margin-top: 20px; /* Space from content */
+}
+
+.mouse-icon {
+    display: inline-block; /* Inline block for proper alignment */
+}
+
+.mouse-wheel {
+    display: block; /* Display as block */
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    border: 2px solid white; /* Circle border */
+    border-radius: 50%; /* Circular shape */
+    animation: bounce 1s infinite; /* Bouncing animation */
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Bounce effect */
+    }
+    60% {
+        transform: translateY(-5px); /* Slight bounce */
+    }
+}
+
+     </style>
+<!-- new added end -->
+
 
 </head>
 
@@ -37,45 +119,28 @@
     ?>
     <!-- End Header/Navigation -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 800px;">
-                            <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">Creative Interior Design</h4>
-                            <h3 class="display-3 text-white mb-md-4">Make Your Home Better</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 800px;">
-                            <h4 class="text-primary text-uppercase font-weight-normal mb-md-3">Creative Interior Design</h4>
-                            <h3 class="display-3 text-white mb-md-4">Stay At Home In Peace</h3>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2 mt-md-4">Learn More</a>
-                        </div>
-                    </div>
-                </div>
+    
+    <!-- Background Video -->
+   <section class="background-video-section">
+    <!-- Background Video -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="home-interior-video-2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Overlay Content -->
+    <div class="overlay-content">
+        <h1></h1>
+        <p></p>
+        <a href="#next" class="scroll-down">
+            <div class="mouse-icon">
+                <span class="mouse-wheel"></span>
             </div>
-            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-primary" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-prev-icon mb-n2"></span>
-                </div>
-            </a>
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-primary" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-next-icon mb-n2"></span>
-                </div>
-            </a>
-        </div>
+        </a>
     </div>
-    <!-- Carousel End -->
+</section>
 
+    <!-- END section -->
 
     <!-- About Start -->
     <div class="container-fluid bg-light">
@@ -579,6 +644,8 @@
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

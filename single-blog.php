@@ -39,7 +39,7 @@
                      <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                   </div>
                   <div class="logo">
-                     <a href="index.html"><img src="img/logo.png" alt="#"></a>
+                     <a href="index"><img src="img/logo.png" alt="#"></a>
                   </div>
                   <span class="menu-trigger visible-xs">
                      <span></span>
@@ -53,14 +53,14 @@
                      <div class="canven-menu-warp">
                         <div class="canven-menu-iner">
                            <ul>
-                              <li><a href="index.html">Home</a></li>
-                              <li><a href="about.html">about</a></li>
-                              <li><a href="service.html">service</a></li>
-                              <li><a href="project.html">project</a></li>
-                              <li><a href="blog.html">blog</a></li>
-                              <li><a href="single-blog.html">single blog</a></li>
-                              <li><a href="elements.html">elements</a></li>
-                              <li><a href="contact.html">contact</a></li>
+                              <li><a href="index">Home</a></li>
+                              <li><a href="about">about</a></li>
+                              <li><a href="service">service</a></li>
+                              <li><a href="project">project</a></li>
+                              <li><a href="blog">blog</a></li>
+                              <li><a href="single-blog">single blog</a></li>
+                              <li><a href="elements">elements</a></li>
+                              <li><a href="contact">contact</a></li>
                            </ul>
                         </div>
                      </div>
@@ -390,7 +390,7 @@
                      <div class="media post_item">
                         <img src="img/post/post_1.png" alt="post">
                         <div class="media-body">
-                           <a href="single-blog.html">
+                           <a href="single-blog">
                               <h3>From life was you fish...</h3>
                            </a>
                            <p>January 12, 2019</p>
@@ -399,7 +399,7 @@
                      <div class="media post_item">
                         <img src="img/post/post_2.png" alt="post">
                         <div class="media-body">
-                           <a href="single-blog.html">
+                           <a href="single-blog">
                               <h3>The Amazing Hubble</h3>
                            </a>
                            <p>02 Hours ago</p>
@@ -408,7 +408,7 @@
                      <div class="media post_item">
                         <img src="img/post/post_3.png" alt="post">
                         <div class="media-body">
-                           <a href="single-blog.html">
+                           <a href="single-blog">
                               <h3>Astronomy Or Astrology</h3>
                            </a>
                            <p>03 Hours ago</p>
@@ -417,7 +417,7 @@
                      <div class="media post_item">
                         <img src="img/post/post_4.png" alt="post">
                         <div class="media-body">
-                           <a href="single-blog.html">
+                           <a href="single-blog">
                               <h3>Asteroids telescope</h3>
                            </a>
                            <p>01 Hours ago</p>

@@ -39,7 +39,7 @@
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                         </div>
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="#"></a>
+                            <a href="index"><img src="img/logo.png" alt="#"></a>
                         </div>
                         <span class="menu-trigger visible-xs">
                             <span></span>
@@ -53,14 +53,14 @@
                             <div class="canven-menu-warp">
                                 <div class="canven-menu-iner">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="service.html">service</a></li>
-                                        <li><a href="project.html">project</a></li>
-                                        <li><a href="blog.html">blog</a></li>
-                                        <li><a href="single-blog.html">single blog</a></li>
-                                        <li><a href="elements.html">elements</a></li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="index">Home</a></li>
+                                        <li><a href="about">about</a></li>
+                                        <li><a href="service">service</a></li>
+                                        <li><a href="project">project</a></li>
+                                        <li><a href="blog">blog</a></li>
+                                        <li><a href="single-blog">single blog</a></li>
+                                        <li><a href="elements">elements</a></li>
+                                        <li><a href="contact">contact</a></li>
                                     </ul>
                                 </div>
                             </div>

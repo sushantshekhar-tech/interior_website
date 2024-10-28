@@ -28,6 +28,222 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
+<!-- added new gallery -->
+<style>
+  .project-two {
+  position: relative;
+  padding: 120px 0 90px;
+  counter-reset: count;
+  background-color: var(--tolak-white, #fff);
+}
+@media (max-width: 767px) {
+  .project-two {
+    padding: 80px 0 50px;
+  }
+}
+.project-two .container {
+  max-width: 1716px;
+}
+.project-two .sec-title {
+  padding-bottom: 21px;
+}
+.project-two__filter {
+  margin: 0 0 31px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-two__filter li {
+  cursor: pointer;
+  position: relative;
+  font-size: 17px;
+  color: var(--tolak-black2, #222222);
+  font-weight: 500;
+  text-transform: capitalize;
+  background-color: transparent;
+  transition: all 0.4s ease;
+  height: 28px;
+  padding: 0 12px;
+}
+.project-two__filter li:hover, .project-two__filter li.active {
+  background-color: var(--tolak-base, #fbdf0d);
+  color: var(--tolak-white, #fff);
+}
+.project-two__item {
+  position: relative;
+  counter-increment: count;
+  overflow: hidden;
+  margin: 0 0 30px;
+}
+.project-two__item__image {
+  position: relative;
+  overflow: hidden;
+}
+.project-two__item__image::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: var(--tolak-black, #051d1f);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  transform: translateX(100%);
+}
+.project-two__item__image img {
+  width: 100%;
+  height: auto;
+}
+.project-two__item:hover .project-two__item__image::after {
+  visibility: visible;
+  opacity: 0.79;
+  transform: translateX(0px);
+}
+.project-two__item__content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 47px 30px 0;
+}
+.project-two__item__number {
+  position: relative;
+  display: block;
+  font-size: 39px;
+  line-height: 0.9;
+  font-weight: 400;
+  color: var(--tolak-white, #fff);
+  opacity: 0;
+  transform: translateX(-700px) scale(0.1) skewX(95deg);
+  transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.project-two__item__number::after {
+  content: counters(count, ".", decimal-leading-zero);
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+.project-two__item:hover .project-two__item__number {
+  opacity: 0.29;
+  transform: translateX(0px) scale(1) skewX(0deg);
+}
+.project-two__item__title {
+  font-size: 22px;
+  letter-spacing: 0.33px;
+  color: var(--tolak-white, #fff);
+  margin: 19px 0 3px;
+  opacity: 0;
+  transform: translateX(-700px) scale(0.1) skewX(95deg);
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.project-two__item__title a {
+  color: inherit;
+  background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1px no-repeat;
+  transition: all 500ms ease;
+}
+.project-two__item__title a:hover {
+  background-size: 100% 1px;
+}
+.project-two__item__title a:hover {
+  color: var(--tolak-base, #fbdf0d);
+}
+.project-two__item:hover .project-two__item__title {
+  opacity: 1;
+  transform: translateX(0px) scale(1) skewX(0deg);
+}
+.project-two__item__text {
+  color: var(--tolak-white, #fff);
+  margin: 0;
+  opacity: 0;
+  transform: translateX(-500px) scale(0.1) skewX(95deg);
+  transition: transform 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.project-two__item:hover .project-two__item__text {
+  opacity: 1;
+  transform: translateX(0px) scale(1) skewX(0deg);
+}
+.project-two__item__border {
+  position: absolute;
+  z-index: 2;
+  right: 55px;
+  bottom: 100px;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 12px solid #4a585f;
+  opacity: 0;
+  transform: rotate(90deg);
+  transform-origin: 100% 100%;
+  transition: transform 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@media (max-width: 1499px) {
+  .project-two__item__border {
+    right: 30px;
+  }
+}
+.project-two__item__border::after {
+  position: absolute;
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  border: 12px solid var(--tolak-base, #fbdf0d);
+  border-radius: 50%;
+}
+.project-two__item:hover .project-two__item__border {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+.project-two__item__rm {
+  position: absolute;
+  z-index: 2;
+  left: 30px;
+  bottom: 30px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--tolak-base, #fbdf0d);
+  border: 7px solid var(--tolak-white, #fff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 25px;
+  color: var(--tolak-white, #fff);
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateX(-500px) scale(0.1) skewX(95deg);
+  transition: transform 1.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.project-two__item__rm:hover {
+  background-color: var(--tolak-white, #fff);
+  border-color: var(--tolak-base, #fbdf0d);
+  color: var(--tolak-base, #fbdf0d);
+  transition: all 0.4s ease;
+}
+.project-two__item:hover .project-two__item__rm {
+  opacity: 1;
+  transform: translateX(0px) scale(1) skewX(0deg);
+}
+.filter-item {
+            display: none;
+        }
+        .filter-item.active {
+            display: block;
+        }
+
+
+</style>
+<!-- added neww gallery -->
 <body>
     <!--::header part start::-->
     <header class="main_menu home_menu">
@@ -39,7 +255,7 @@
                             <a id="search_1" href="javascript:void(0)"><i class="ti-search"></i></a>
                         </div>
                         <div class="logo">
-                            <a href="index.html"><img src="img/logo.png" alt="#"></a>
+                            <a href="index"><img src="img/logo.png" alt="#"></a>
                         </div>
                         <span class="menu-trigger visible-xs">
                             <span></span>
@@ -53,14 +269,14 @@
                             <div class="canven-menu-warp">
                                 <div class="canven-menu-iner">
                                     <ul>
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="service.html">service</a></li>
-                                        <li><a href="project.html">project</a></li>
-                                        <li><a href="blog.html">blog</a></li>
-                                        <li><a href="single-blog.html">single blog</a></li>
-                                        <li><a href="elements.html">elements</a></li>
-                                        <li><a href="contact.html">contact</a></li>
+                                        <li><a href="index">Home</a></li>
+                                        <li><a href="about">about</a></li>
+                                        <li><a href="service">service</a></li>
+                                        <li><a href="project">project</a></li>
+                                      
+                                        <li><a href="single-blog">single blog</a></li>
+                                        <li><a href="elements">elements</a></li>
+                                        <li><a href="contact">contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -284,7 +500,7 @@
                                         <a href="#" class="admin_name">jhon doe</a>
                                         <span>Project maneger</span>
                                         <p>Lorem ipsum dolor sit amet lorem consectetur adipiscing look. </p>
-                                        <a href="single_project.html" class="btn_1">learn more <span><img
+                                        <a href="single_project" class="btn_1">learn more <span><img
                                                     src="img/icon/left.svg" alt=""></span> </a>
                                     </div>
                                 </div>
@@ -295,7 +511,7 @@
                                         <a href="#" class="admin_name">jhon doe</a>
                                         <span>Project maneger</span>
                                         <p>Lorem ipsum dolor sit amet lorem consectetur adipiscing look. </p>
-                                        <a href="single_project.html" class="btn_1">learn more <span><img
+                                        <a href="single_project" class="btn_1">learn more <span><img
                                                     src="img/icon/left.svg" alt=""></span> </a>
                                     </div>
                                 </div>
@@ -310,7 +526,7 @@
                                         <a href="#" class="admin_name">jhon doe</a>
                                         <span>Project maneger</span>
                                         <p>Lorem ipsum dolor sit amet lorem consectetur adipiscing look. </p>
-                                        <a href="single_project.html" class="btn_1">learn more <span><img
+                                        <a href="single_project" class="btn_1">learn more <span><img
                                                     src="img/icon/left.svg" alt=""></span> </a>
                                     </div>
                                 </div>
@@ -321,7 +537,7 @@
                                         <a href="#" class="admin_name">jhon doe</a>
                                         <span>Project maneger</span>
                                         <p>Lorem ipsum dolor sit amet lorem consectetur adipiscing look. </p>
-                                        <a href="single_project.html" class="btn_1">learn more <span><img
+                                        <a href="single_project" class="btn_1">learn more <span><img
                                                     src="img/icon/left.svg" alt=""></span> </a>
                                     </div>
                                 </div>
@@ -335,146 +551,31 @@
     <!-- project_part part end-->
 
     <!-- blog part start-->
-    <section class="blog_part">
+   <section class="project-two">
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-lg-7">
-                    <div class="section_tittle">
-                        <h2>Blog Post</h2>
-                        <p>According to the research firm Frost & Sullivan, the estimated size of
-                            the orth American used test and measurement equipment market was $446.4</p>
-                    </div>
+        <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center" style="font-size: 30px;"><span></span>Our Menu<span></span></p>
+                    <h1 class="text-center mb-5 berkshire-swash-regular" style="font-size: 25px;">Turning mornings into delightful memories, one waffle at a time.</h1>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="blog_post_slider owl-carousel">
-                        <div class="single_blog_post">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="single_img">
-                                        <a href="blog.html"><img src="img/blog/blog_1.png" alt="#"></a>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="single_project_text">
-                                        <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">john deo</a></h4>
-                                            <p>Farmar x (ceo)</p>
-                                            <span>May 02 2019</span>
-                                        </div>
-                                        <p>According to the research firm Frost & Sullivan all the estimated size
-                                            of the North American used test and measurement equipment market was
-                                            $446.4 million 2004 and is estimated to to $654.5 milliocompanies an
-                                            governmentsprocured and mt instruments.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_blog_post">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="single_img">
-                                        <a href="blog.html"><img src="img/blog/blog_1.png" alt="#"></a>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="single_project_text">
-                                        <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">john deo</a></h4>
-                                            <p>Farmar x (ceo)</p>
-                                            <span>May 02 2019</span>
-                                        </div>
-                                        <p>According to the research firm Frost & Sullivan all the estimated size
-                                            of the North American used test and measurement equipment market was
-                                            $446.4 million 2004 and is estimated to to $654.5 milliocompanies an
-                                            governmentsprocured and mt instruments.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="single_blog_post">
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="single_img">
-                                        <a href="blog.html"><img src="img/blog/blog_1.png" alt="#"></a>
-
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="single_project_text">
-                                        <div class="single_project_tittle">
-                                            <h4> <a href="blog.html">john deo</a></h4>
-                                            <p>Farmar x (ceo)</p>
-                                            <span>May 02 2019</span>
-                                        </div>
-                                        <p>According to the research firm Frost & Sullivan all the estimated size
-                                            of the North American used test and measurement equipment market was
-                                            $446.4 million 2004 and is estimated to to $654.5 milliocompanies an
-                                            governmentsprocured and mt instruments.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="slider-counter"></div>
-                </div>
+            
+            <ul class="list-unstyled post-filter project-two__filter">
+                <li class="active" data-filter=".filter-item"><span>all</span></li>
+                <li data-filter=".home_interior"><span>home interior</span></li>
+                <li data-filter=".False_Ceiling"><span>false ceiling</span></li>
+                <li data-filter=".Furniture"><span>Furniture</span></li>
+                <li data-filter=".extra"><span>extra</span></li>
+            </ul>
+            <div class="row filter-layout">
+                <!-- Project items will be appended here by JavaScript --> 
             </div>
         </div>
     </section>
-    <!-- blog part end-->
 
-    <!-- contact us part start-->
-    <section class="contact_us">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="contact_us_iner">
-                        <div class="row justify-content-around">
-                            <div class="col-lg-4">
-                                <div class="contact_us_left_text">
-                                    <h4>Melbourne</h4>
-                                    <span>Australia</span>
-                                    <p>324 King Heaven tower, House no, 15 King building
-                                        Melbourne ,VIC-222, Australia</p>
-                                    <p>Email: infoheaven@gmail.com <br>Phone no: 23113 6456 888</p>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="contact_us_right_text">
-                                    <h5>Call Directly;</h5>
-                                    <h2>(23131 65465 54)</h2>
-                                    <h5>Brand Office</h5>
-                                    <span>324 King Heaven tower, House no, 15 King
-                                        Melbourne ,VIC-222, Australia</span>
-                                    <h5>Working Hours:</h5>
-                                    <p>Monday - Friday / 9.00 PM - 5.00 AM</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- contact us part end-->
-
-    <!-- map us part start-->
-    <section class="map_part">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="map_iner">
-                        <div class="map"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- map us part end-->
+
+    <!-- extra changes to look beautiful -->
+     
+     <!-- end extra -->
 
     <!-- footer part start-->
     <footer class="footer-area">
@@ -558,34 +659,238 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     <!-- jquery plugins here-->
     <!-- jquery -->
-    <script src="js/jquery-1.12.1.min.js"></script>
-    <!-- popper js -->
-    <script src="js/popper.min.js"></script>
-    <!-- bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- easing js -->
-    <script src="js/jquery.magnific-popup.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiper.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/masonry.pkgd.js"></script>
-    <!-- particles js -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/gmap3.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap">
+   
+    
+    
+ <!-- Remove this old jQuery version -->
+<!-- <script src="js/jquery-1.12.1.min.js"></script> -->
+
+<!-- Keep this newer jQuery version -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Popper JS -->
+<script src="js/popper.min.js"></script>
+<!-- Other plugins like owl-carousel, magnific-popup, masonry, etc. -->
+<script src="js/jquery.magnific-popup.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/masonry.pkgd.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/gmap3.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/gijgo.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- Contact form JS -->
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.form.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/contact.js"></script>
+
+<!-- Custom JS -->
+<script src="js/custom.js"></script>
+<script>
+        
+        $(document).ready(function () {
+        $('.post-filter li').on('click', function () {
+            var filterValue = $(this).attr('data-filter');
+            $('.post-filter li').removeClass('active');
+            $(this).addClass('active');
+
+            if (filterValue === '*') {
+                $('.filter-item').show();
+            } else {
+                $('.filter-item').hide();
+                $(filterValue).show();
+            }
+        });
+    });
+
+
+    
     </script>
-    <!-- slick js -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/gijgo.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <!-- contact js -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
-    <script src="js/contact.js"></script>
-    <!-- custom js -->
-    <script src="js/custom.js"></script>
+<script>
+   const projects = [
+    // Waffles
+    {
+        imgSrc: "./img/home-interior-1.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-2.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-3.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-4.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-4.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-5.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Berry Redvelvet WS",
+        category: "home_interior"
+    },
+    {
+        imgSrc: "./img/home-interior-6.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Dark Oreo Jawbreaker WS",
+        category: "home_interior"
+    },
+    // Pancakes
+    {
+        imgSrc: "./img/false-ceiling-1.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Rocky Bubble Waffle",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-2.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-3.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-4.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-5.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-6.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-8.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    {
+        imgSrc: "./img/false-ceiling-7.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Tender Creamcheese MiniPancakes",
+        category: "False_Ceiling"
+    },
+    // Drinks
+    {
+        imgSrc: "./img/furniture-snmr-1.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Blue Cooler",
+        category: "Furniture"
+    },
+    {
+        imgSrc: "./img/furniture-snmr-2.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Blue Cooler",
+        category: "Furniture"
+    },
+    {
+        imgSrc: "./img/furniture-snmr-3.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Blue Cooler",
+        category: "Furniture"
+    },
+    {
+        imgSrc: "./img/furniture-snmr-4.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Blue Cooler",
+        category: "Furniture"
+    },
+    {
+        imgSrc: "./img/furniture-snmr-5.png",
+        title: "The Belgian Waffle Xpress",
+        description: "Bottle 475ml 7Up",
+        category: "Furniture"
+    },
+ 
+    {
+        imgSrc: "https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_640.jpg",
+        title: "The Belgian Waffle Xpress",
+        description: "Paneer Sandwich",
+        category: "Extra"
+    }
+    
+];
+
+
+        const container = document.querySelector('.filter-layout');
+
+        projects.forEach(project => {
+            const projectItem = document.createElement('div');
+            projectItem.classList.add('col-xl-3', 'col-md-6', 'filter-item', project.category);
+
+            projectItem.innerHTML = `
+                <div class="project-two__item">
+                    <div class="project-two__item__image">
+                        <img src="${project.imgSrc}" alt="${project.description}">
+                    </div>
+                    <div class="project-two__item__content">
+                        <div class="project-two__item__number"></div>
+                        <h3 class="project-two__item__title"><a href="project-details.html">${project.title}</a></h3>
+                        <p class="project-two__item__text">
+                            ${project.description}
+                        </p>
+                    </div>
+                    <div class="project-two__item__border"></div>
+                    <a href="project-details.html" class="project-two__item__rm"><span class="icofont-circled-right"></span></a>
+                </div>
+            `;
+
+            container.appendChild(projectItem);
+
+        });
+
+        var btn = $('#back-to-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+    </script>
+
 </body>
 
 </html>

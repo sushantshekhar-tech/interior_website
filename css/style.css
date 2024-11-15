@@ -2501,15 +2501,29 @@ ul {
 .banner_part {
   height: 890px;
   position: relative;
-  background-image: url(../img/banner_bg_1.png);
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  background-size: cover;
+  top: 0;
   z-index: 2;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
+
+.video_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; 
+  overflow: hidden;
+}
+
+.banner_video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 
 @media (max-width: 575px) {
   /* line 2, ../../01 cl html template/New folder/May 2019/176 Interior Heaven/Interior Heaven Html/sass/_banner.scss */
